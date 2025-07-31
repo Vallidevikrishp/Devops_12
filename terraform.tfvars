@@ -1,0 +1,6 @@
+resource_group_name = "valli-rg"
+location            = "East US"
+vm_name             = "valli-vm"
+admin_username      = "valliadmin"
+vm_size             = "Standard_DS1_v2"
+ssh_public_key_path = "~/.ssh/id_rsa.pub"
