@@ -1,0 +1,10 @@
+resource "null_resource" "jenkins_job" {
+  provisioner "local-exec" {
+    command = <<EOT
+curl -X POST http://<jenkins-ip>:8080/createItem?name=TerraformPipeline \
+  --user admin:your_api_token \
+  --header "Content-Type: application/xml" \
+  --data-binary @jenkins-job-config.xml
+EOT
+  }
+}
