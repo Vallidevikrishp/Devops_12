@@ -1,1 +1,1 @@
-echo "myproject"
+echo "my project in git"
